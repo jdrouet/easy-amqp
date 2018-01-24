@@ -1,10 +1,9 @@
-var easyamqp = require('./easyamqp');
-
+const EasyRabbit = require('./easy-rabbit');
 
 module.exports = function(options, implOptions) {
-  return new easyamqp(options, implOptions);
-}
+  return new EasyRabbit(options, implOptions);
+};
 
 module.exports.createConnection = function(options, implOptions) {
-  return new easyamqp(options, implOptions);
+  return new EasyRabbit(options, implOptions);
 };

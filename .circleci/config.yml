@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  test-node-4:
+    docker:
+      - image: circleci/node:4
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+  test-node-6:
+    docker:
+      - image: circleci/node:6
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+  test-node-8:
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+  test-node-latest:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test-node-4
+      - test-node-6
+      - test-node-8
+      - test-node-latest

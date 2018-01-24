@@ -1,4 +1,4 @@
-var Chain = module.exports = function(easyamqp, method, args) {
+const Chain = module.exports = function(easyamqp, method, args) {
   this.easyamqp = easyamqp;
   this.callQueue = [];
   this.running = false;

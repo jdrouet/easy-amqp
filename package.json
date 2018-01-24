@@ -1,7 +1,7 @@
 {
-  "name": "easy-amqp",
-  "version": "0.1.3",
-  "description": "fluent wrapper around amqp",
+  "name": "easy-rabbit",
+  "version": "0.0.1",
+  "description": "Fluent wrapper around amqp",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -16,13 +16,16 @@
     "rabbitmq",
     "queue"
   ],
-  "author": "Brian Kirchoff <briankircho@gmail.com>",
+  "contributors": [
+    "Brian Kirchoff <briankircho@gmail.com>"
+  ],
+  "author": "Jeremie Drouet <jeremie.drouet@gmail.com>",
   "license": "BSD",
   "dependencies": {
-    "amqp": "~0.1.7"
+    "amqp": "~0.2.6"
   },
   "devDependencies": {
-    "should": "~1.2.2",
-    "mocha": "~1.9.0"
+    "mocha": "^5.0.0",
+    "should": "^13.2.1"
   }
 }
