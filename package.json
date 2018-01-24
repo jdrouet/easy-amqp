@@ -1,15 +1,15 @@
 {
-  "name": "easy-rabbit",
+  "name": "easy-bunny",
   "version": "0.0.1",
   "description": "Fluent wrapper around amqp",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "homepage": "https://github.com/briankircho/easy-amqp",
+  "homepage": "https://github.com/jdrouet/easy-bunny",
   "repository": {
     "type": "git",
-    "url": "git://github.com/briankircho/easy-amqp.git"
+    "url": "git://github.com/jdrouet/easy-bunny.git"
   },
   "keywords": [
     "amqp",
